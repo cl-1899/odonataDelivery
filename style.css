@@ -1,0 +1,19 @@
+body { background-color: rgba(91, 208, 212, 0.1); width: 100vw; margin: 0; }
+
+.button-main { border-radius: 0.3em; margin: 0.7em auto 0.7em 0.3em; padding: 0.5em; background-color: #7f31de; color: white; font-weight: bold; height: 3em; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.main-places { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.main-places .input-search { margin: auto auto 0.7em 0.3em; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.main-places .input-search input { height: 1.7em; }
+
+.main-places .input-search button { height: 2.5em; margin-left: 1em; background-color: rgba(226, 223, 230, 0.5); border-radius: 0.6em; color: #2345cc; }
+
+.table-places .tbody-places .district__place td, .table-places .tbody-places .villagecouncil__place td { border: 1px dotted #e0b4ca; }
+
+.table-places .thead-places { border: 1px dotted #e0b4ca; }
+
+.table-places .tbody-places .district__name-td { font-weight: bold; }
+
+.table-places .tbody-places .villagecouncil__name-td { font-weight: bold; font-style: italic; }
