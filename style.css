@@ -1,0 +1,81 @@
+body { background-color: rgba(91, 208, 212, 0.1); width: 100vw; margin: 0; }
+
+.button-main, .input-search input, .input-search button, .input-calc input, .button-calc button[type="submit"], .button-calc button[type="reset"] { font-size: calc(0.1rem + 3.5vw); }
+
+@media (min-width: 600px) { .button-main, .input-search input, .input-search button, .input-calc input, .button-calc button[type="submit"], .button-calc button[type="reset"] { font-size: 1rem; } }
+
+.table-places, .table-calc { font-size: calc(0.3rem + 3.5vw); }
+
+@media (min-width: 600px) { .table-places, .table-calc { font-size: 1.2rem; } }
+
+.button-main { border-radius: 0.5em; margin: 0.7em auto 0.7em 0.3em; padding: 0.2em 1em; background-color: #8b00ff; color: white; font-weight: bold; height: 3em; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: 0.1s; transition: 0.1s; }
+
+.button-main:hover { background-color: #a840ff; cursor: pointer; }
+
+.button-main:active { background-color: #6f00cc; }
+
+.input-search { margin: auto auto 0.7em 0.3em; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.input-search input { height: 1.7em; }
+
+.input-search button { height: 2.5em; margin-left: 1.5em; border-radius: 0.2em; background-color: rgba(64, 63, 63, 0.9); padding: 0.2em 1em; color: #ffffff; }
+
+.input-search button:hover { background-color: rgba(64, 63, 63, 0.8); cursor: pointer; }
+
+.input-search button:active { background-color: #403f3f; }
+
+.input-calc { margin: auto auto 0.7em 0.3em; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.input-calc input { height: 1.7em; }
+
+.button-calc { margin: auto auto 0.7em 0.3em; }
+
+.button-calc button[type="submit"] { margin-right: 0.7em; height: 2.2em; border-radius: 0.2em; background-color: rgba(208, 87, 0, 0.9); padding: 0.2em 1em; color: #ffffff; }
+
+.button-calc button[type="submit"]:hover { background-color: rgba(208, 87, 0, 0.8); cursor: pointer; }
+
+.button-calc button[type="submit"]:active { background-color: #d05700; }
+
+.button-calc button[type="reset"] { height: 2.2em; border-radius: 0.2em; background-color: rgba(64, 63, 63, 0.9); padding: 0.2em 1em; color: #ffffff; }
+
+.button-calc button[type="reset"]:hover { background-color: rgba(64, 63, 63, 0.8); cursor: pointer; }
+
+.button-calc button[type="reset"]:active { background-color: #403f3f; }
+
+.table-places { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 0.2em; width: 100%; }
+
+@media (min-width: 600px) { .table-places { max-width: 500px; } }
+
+.row-places, .thead-calc, .place, .results { display: table; width: 100%; }
+
+.row-places span { display: table-cell; vertical-align: middle; text-align: center; width: 25%; font-weight: bold; }
+
+.row-places span:nth-child(2), .row-places span:nth-child(3) { padding: 0 0.5em; }
+
+@media (min-width: 600px) { .table-calc { max-width: 21em; } }
+
+.thead-calc { margin-bottom: 0.4em; }
+
+.thead-calc span { display: table-cell; vertical-align: middle; text-align: center; width: 33.333%; font-weight: bold; }
+
+.district__name { margin: 0.4em 0; background-color: rgba(0, 255, 255, 0.8); font-weight: bold; text-align: center; }
+
+.selsovet__name { margin: 0.3em 0; padding-left: calc(1em + 10vw); font-style: italic; font-weight: 600; background-color: #ffff40; }
+
+.place { margin-bottom: 0.1em; }
+
+.place span { display: table-cell; }
+
+.place span:first-child { text-align: left; width: 40%; }
+
+@media (min-width: 600px) { .place span:first-child { width: 34%; } }
+
+.place span:not(:first-child) { width: 20%; }
+
+@media (min-width: 600px) { .place span:not(:first-child) { width: 22%; } }
+
+.results { margin-bottom: 0.2em; }
+
+.results span { display: table-cell; width: 33.333%; text-align: center; }
+
+.none { display: none; }

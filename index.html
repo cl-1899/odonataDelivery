@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+   	<meta charset="UTF-8" />
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0  " />
+   	<title id="mainTitle">Список мест</title>
+		<link rel="shortcut icon" href="odonata.png" type="image/png">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<button type="submit" class="button-main" id="buttonReplace">Открыть калькулятор</button>
+<div class="main-places" id="places">
+	<div class="input-search">
+		<input id="inputSearch" placeholder="Поиск" />
+		<button type="reset" id="resetSearch">Очистить</button>
+	</div>
+	<div class="list">
+		<div class="table-places" id="tablePlaces">
+			<div class="thead-places" id="theadPlaces">
+				<div class="row-places">
+					<span>Места</span>
+					<span>Расстояние</span>
+					<span>Стоимость<br>до 55р.</span>
+					<span>Стоимость<br>от 55р.</span>
+				</div>
+			</div>
+			<!-- вот здесь вставляются все результаты -->
+		</div>
+		<div class="none" id="noResults">нет результатов</div>
+	</div>
+</div><div class="main-calc" id="calc" hidden>
+	<div class="input-calc" id="divInputCalc">
+		<input id="inputCalc" type="number" placeholder="Введите расстояние" onkeydown="return checkKm(event.key)">
+	</div>
+	<div class="button-calc">
+		<button type="submit" id="buttonCalc">Посчитать</button>
+		<button type="reset" id="resetCalc">Сбросить всё</button>
+	</div>
+	<div class="table-calc" id="tableCalc">
+		<div class="thead-calc none" id="theadCalc">
+			<span>Введённое<br>расстояние</span>
+			<span>Стоимость<br>от 55р.</span>
+			<span>Стоимость<br>до 55р.</span>
+		</div>
+	</div>
+</div>   	<script src="script.js"></script>
+	</body>
+</html>
