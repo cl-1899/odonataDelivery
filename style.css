@@ -44,13 +44,23 @@ body { background-color: rgba(91, 208, 212, 0.1); width: 100vw; margin: 0; }
 
 .table-places { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 0.2em; width: 100%; }
 
-@media (min-width: 600px) { .table-places { max-width: 600px; } }
+@media (min-width: 800px) { .table-places { max-width: 800px; } }
 
 .row-places, .thead-calc, .place, .results { display: table; width: 100%; }
 
-.row-places span { display: table-cell; vertical-align: middle; text-align: center; width: 25%; font-weight: bold; }
+.row-places span { display: table-cell; vertical-align: middle; text-align: center; font-weight: bold; }
+
+.row-places span:first-child { width: 31%; }
+
+@media (min-width: 800px) { .row-places span:first-child { width: 24%; } }
+
+.row-places span:not(:first-child) { width: 23%; }
+
+@media (min-width: 800px) { .row-places span:not(:first-child) { width: 19%; } }
 
 .row-places span:nth-child(2), .row-places span:nth-child(3) { padding: 0 0.5em; }
+
+@media (max-width: 799px) { .row-places span:last-child { display: none; } }
 
 @media (min-width: 600px) { .table-calc { max-width: 450px; } }
 
@@ -62,19 +72,21 @@ body { background-color: rgba(91, 208, 212, 0.1); width: 100vw; margin: 0; }
 
 .selsovet__name { margin: 0.3em 0; padding-left: calc(1em + 10vw); padding-left: 5em; font-style: italic; font-weight: 600; background-color: #ffe0b5; }
 
-@media (min-width: 600px) { .selsovet__name { padding-left: 120px; } }
+@media (min-width: 800px) { .selsovet__name { padding-left: 190px; } }
 
 .place { margin-bottom: 0.1em; }
 
-.place > span { display: table-cell; }
+.place > span { display: table-cell; text-align: center; }
 
-.place > span:first-child { text-align: left; width: 40%; }
+.place > span:first-child { text-align: left; width: 31%; }
 
-@media (min-width: 600px) { .place > span:first-child { width: 25%; } }
+@media (min-width: 800px) { .place > span:first-child { width: 24%; } }
 
-.place > span:not(:first-child) { width: 20%; }
+.place > span:not(:first-child) { width: 23%; }
 
-@media (min-width: 600px) { .place > span:not(:first-child) { width: 25%; text-align: center; } }
+@media (min-width: 800px) { .place > span:not(:first-child) { width: 19%; } }
+
+@media (max-width: 799px) { .place > span:last-child { display: none; } }
 
 #noResults { margin-left: 0.5em; }
 
