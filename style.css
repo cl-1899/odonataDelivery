@@ -62,11 +62,19 @@ body { background-color: rgba(91, 208, 212, 0.1); width: 100vw; margin: 0; }
 
 @media (max-width: 799px) { .row-places span:last-child { display: none; } }
 
+.row-places span:nth-child(3) { width: 46%; }
+
+@media (min-width: 800px) { .row-places span:nth-child(3) { width: 38%; } }
+
 @media (min-width: 600px) { .table-calc { max-width: 450px; } }
 
 .thead-calc { margin-bottom: 0.4em; }
 
-.thead-calc span { display: table-cell; vertical-align: middle; text-align: center; width: 33.333%; font-weight: bold; }
+.thead-calc span { display: table-cell; vertical-align: middle; text-align: center; font-weight: bold; }
+
+.thead-calc span:first-child { width: 33.333%; }
+
+.thead-calc span:last-child { width: 66.666%; }
 
 .district__name { margin: 0.4em 0; background-color: #ceffbc; font-weight: bold; text-align: center; }
 
@@ -88,11 +96,19 @@ body { background-color: rgba(91, 208, 212, 0.1); width: 100vw; margin: 0; }
 
 @media (max-width: 799px) { .place > span:last-child { display: none; } }
 
+.place > span:nth-child(3) { width: 46%; }
+
+@media (min-width: 800px) { .place > span:nth-child(3) { width: 38%; } }
+
 #noResults { margin-left: 0.5em; }
 
 .results { margin-bottom: 0.2em; }
 
-.results span { display: table-cell; width: 33.333%; text-align: center; }
+.results span { display: table-cell; text-align: center; }
+
+.results span:first-child { width: 33.333%; }
+
+.results span:last-child { width: 66.666%; }
 
 .none { display: none; }
 
