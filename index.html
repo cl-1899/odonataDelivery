@@ -21,8 +21,8 @@
 				<div class="row-places">
 					<span>Места</span>
 					<span>Расстояние</span>
-					<span>Стоимость<br>до порога / льгота</span>
-					<span>Направление /<br>Км</span>
+					<span>Стоимость<br>до 150 р. / от 150 р.<br><small>до 100 р. / от 100 р.</small></span>
+					<span>Направление</span>
 				</div>
 			</div>
 			<!-- вот здесь вставляются все результаты -->
@@ -30,13 +30,6 @@
 		<div class="none" id="noResults">нет результатов</div>
 	</div>
 </div><div class="main-calc" id="calc" hidden>
-	<div class="zones-calc" id="zonesCalc">
-		<button type="button" class="zone-btn zone-btn--green" data-zone="green">Зелёная</button>
-		<button type="button" class="zone-btn zone-btn--purple" data-zone="purple">Фиолетовая</button>
-		<button type="button" class="zone-btn zone-btn--blue" data-zone="blue">Синяя</button>
-		<button type="button" class="zone-btn zone-btn--red" data-zone="red">Красная</button>
-		<button type="button" class="zone-btn zone-btn--outside zone-btn--active" data-zone="outside">Вне зоны</button>
-	</div>
 	<div class="input-calc" id="divInputCalc">
 		<input id="inputCalc" type="number" placeholder="Введите расстояние" onkeydown="return checkKm(event.key)">
 	</div>
@@ -46,8 +39,8 @@
 	</div>
 	<div class="table-calc" id="tableCalc">
 		<div class="thead-calc none" id="theadCalc">
-			<span>Зона /<br>расстояние</span>
-			<span>Стоимость<br>до порога / льгота</span>
+			<span>Расстояние</span>
+			<span>Стоимость<br>до 150 р. / от 150 р.<br><small>до 100 р. / от 100 р.</small></span>
 		</div>
 	</div>
 </div>
